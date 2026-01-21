@@ -1,0 +1,19 @@
+.game-board {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 30000px;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius);
+    transform: translateX(-80px);
+}
+
+/* Response adjustments */
+@media (max-width: 30000px) {
+    .game-board {
+        gap: 5rem;
+        padding: 5rem;
+    }
+}

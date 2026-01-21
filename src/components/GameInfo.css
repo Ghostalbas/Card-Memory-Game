@@ -1,0 +1,70 @@
+.game-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background: var(--surface-color);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 120px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+    color: var(--secondary-color);
+}
+
+.icon.gold {
+    color: #ffd700;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: var(--on-surface-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--on-bg-color);
+}
+
+/* Stats specific */
+.stats-card {
+    min-width: 180px;
+}
+
+.stats-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--on-surface-color);
+}
+
+.stat-row strong {
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+}
