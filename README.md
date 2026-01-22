@@ -1,16 +1,66 @@
-# React + Vite
+# Card Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+interactive card memory game built with React and Vite.
 
-Currently, two official plugins are available:
+## 🎮 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Three Difficulty Levels**: 
+  - **Easy**: 4x4 grid (8 pairs), 60s limit.
+  - **Medium**: 6x6 grid (18 pairs), 90s limit.
+  - **Hard**: 8x8 grid (32 pairs), 120s limit.
+- **Statistics Tracking**: Keeps track of your wins, losses, and best times for each difficulty level using LocalStorage.
+- **Responsive Design**: Playable on various screen sizes.
+- **Visual Feedback**: Smooth card flip animations and status modals for win/loss states.
+- **Modern UI**: Styled with Vanilla CSS and powered by Lucide React icons.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19**: Frontend library for building the UI.
+- **Vite**: Ultra-fast build tool and development server.
+- **Lucide React**: Beautifully simple pixel-perfect icons.
+- **CSS3**: Custom styles with animations and transitions.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (latest LTS recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
+
+## 🧠 Game Mechanics
+
+1. **Start**: Choose a difficulty level and click the **Start Game** button.
+2. **Flip**: Click a card to reveal the icon beneath.
+3. **Match**: Select a second card. If the icons match, both cards stay flipped. If they don't, they will flip back after a short delay.
+4. **Win**: Match all pairs within the time limit to win!
+5. **Loss**: If the timer reaches zero before all pairs are matched, the game is over.
+
+## 📂 Project Structure
+
+- `src/components/`: React components (Card, GameBoard, DifficultySelector, etc.).
+- `src/hooks/`: Custom hooks like `useMemoryGame` for game logic.
+- `src/utils/`: Configuration and helper functions.
+- `src/assets/`: Static assets.
+- `App.jsx`: Main application wrapper.
+
+
+
